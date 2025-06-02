@@ -1,0 +1,14 @@
+[package]
+name = "Rust_MCS_Python"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name = "rust_mcs_python"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "*", features = ["extension-module"] }
+numpy = "*"
+nalgebra = "*"
+Rust_MCS = { git = "https://github.com/SergeiGL/Rust_MCS" }
